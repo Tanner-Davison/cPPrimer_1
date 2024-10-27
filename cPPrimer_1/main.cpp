@@ -2,7 +2,6 @@
 #include <print>
 
 int main() {
-
 	int currVal = 0, val = 0;
 
 	if (std::cin >> currVal) {
@@ -11,8 +10,8 @@ int main() {
 			if (val == currVal) {
 				++cnt;
 			}
+			//only executes upon new group change-> prints last group ;
 			else {
-				//only executes upon new group change-> prints last group;
 				std::cout << currVal << " occurs " << cnt << " times " << std::endl;
 				cnt = 1;
 				currVal = val; //sets current val to new val;
