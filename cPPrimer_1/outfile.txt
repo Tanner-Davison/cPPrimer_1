@@ -1,0 +1,20 @@
+	ISBN: 0-201-78345-X
+	Units Sold: 142
+	Revenue: $3050
+	Average price: $21.4789
+	
+	ISBN: 0-201-78350-X
+	Units Sold: 8
+	Revenue: $200
+	Average price: $25
+	
+	ISBN: 0-201-78352-X
+	Units Sold: 6
+	Revenue: $150
+	Average price: $25
+	
+CALLED LAST ITEM
+	ISBN: 0-201-78353-X
+	Units Sold: 6
+	Revenue: $150
+	Average price: $25

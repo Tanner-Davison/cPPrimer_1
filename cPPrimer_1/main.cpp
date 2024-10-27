@@ -1,24 +1,28 @@
 #include <iostream>
 #include <print>
 
-int main() {
-	int currVal = 0, val = 0;
+#include "Sales_item.h"
 
-	if (std::cin >> currVal) {
-		int cnt = 1;
-		while (std::cin >> val) {
-			if (val == currVal) {
-				++cnt;
+int main() {
+	Sales_item currentItem, nextItem;
+
+	if (std::cin >> currentItem) {
+		//stuck in while loop until no more items
+		while (std::cin >> nextItem) {
+			if (nextItem.isbn() == currentItem.isbn()) {
+				currentItem += nextItem;
 			}
-			//only executes upon new group change-> prints last group ;
+			//item does not equal prev item read prev items group & reset current;
 			else {
-				std::cout << currVal << " occurs " << cnt << " times " << std::endl;
-				cnt = 1;
-				currVal = val; //sets current val to new val;
+				std::cout << currentItem << "\n\t" << std::endl;
+				currentItem = nextItem;
 			}
 		}
-		std::cout << currVal << " occurs " << cnt << " times " << std::endl;
+		//this doesnt get called until there are no more items.(calls last item group)
+		std::cout << "CALLED LAST ITEM\n" << currentItem << std::endl;
 	}
+
+
 
 	return 0;
 }
