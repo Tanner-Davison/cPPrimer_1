@@ -1,4 +1,5 @@
 #pragma once
+
 /*
  * This file contains code from "C++ Primer, Fifth Edition", by Stanley B.
  * Lippman, Josee Lajoie, and Barbara E. Moo, and is covered under the
@@ -39,10 +40,12 @@
 // we're here only if SALESITEM_H has not yet been defined 
 #define SALESITEM_H
 
+#include "Version_test.h" 
 
 // Definition of Sales_item class and related functions goes here
 #include <iostream>
 #include <string>
+#include <iomanip>
 
 class Sales_item {
 	// these declarations are explained section 7.2.1, p. 270 
@@ -141,8 +144,11 @@ operator>>(std::istream& in, Sales_item& s)
 std::ostream&
 operator<<(std::ostream& out, const Sales_item& s)
 {
-	out << "\tISBN: " << s.isbn() << "\n\tUnits Sold: " << s.units_sold << "\n"
-		<< "\tRevenue: $" << s.revenue << "\n\tAverage price: $" << s.avg_price();
+	out << "ISBN: " << s.isbn() << "\nUnits sold: "
+		<< s.units_sold << "\nRevenue: $"
+		<< std::fixed << std::setprecision(2)
+		<< static_cast<float>(s.revenue)
+		<< "\nAvg price: $" << static_cast<float>(s.avg_price());
 	return out;
 }
 

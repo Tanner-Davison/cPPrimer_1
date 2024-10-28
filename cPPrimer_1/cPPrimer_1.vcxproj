@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sales_item.h" />
+    <ClInclude Include="Version_test.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="add_item.txt" />

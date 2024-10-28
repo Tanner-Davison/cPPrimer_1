@@ -1,20 +1,34 @@
-	ISBN: 0-201-78345-X
-	Units Sold: 142
-	Revenue: $3050
-	Average price: $21.4789
-	
-	ISBN: 0-201-78350-X
-	Units Sold: 8
-	Revenue: $200
-	Average price: $25
-	
-	ISBN: 0-201-78352-X
-	Units Sold: 6
-	Revenue: $150
-	Average price: $25
-	
-CALLED LAST ITEM
-	ISBN: 0-201-78353-X
-	Units Sold: 6
-	Revenue: $150
-	Average price: $25
+
+ISBN: 0-201-78345-X
+Units sold: 142
+Revenue: $3050.00
+Avg price: $21.48
+Trans count: 10
+-------------------------
+
+ISBN: 0-201-78350-X
+Units sold: 8
+Revenue: $200.00
+Avg price: $25.00
+Trans count: 3
+-------------------------
+
+ISBN: 0-201-78352-X
+Units sold: 6
+Revenue: $150.00
+Avg price: $25.00
+Trans count: 3
+-------------------------
+ISBN: 0-201-78353-X
+Units sold: 6
+Revenue: $150.00
+Avg price: $25.00
+Trans Count: 3
+-------------------------
+
+Total Summary: 
+ISBN: 
+Units sold: 162
+Revenue: $3550.00
+Avg price: $21.91
+Book IBSN Groups Sold: 4

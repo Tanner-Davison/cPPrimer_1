@@ -1,28 +1,35 @@
 #include <iostream>
-#include <print>
-
 #include "Sales_item.h"
 
-int main() {
-	Sales_item currentItem, nextItem;
 
-	if (std::cin >> currentItem) {
-		//stuck in while loop until no more items
-		while (std::cin >> nextItem) {
-			if (nextItem.isbn() == currentItem.isbn()) {
-				currentItem += nextItem;
+int main() {
+
+	Sales_item total;
+	std::string spacer = "-------------------------\n";
+	if (std::cin >> total) {
+		Sales_item trans, allSales;
+		int groupCnt = 1, occurances = 1;
+		while (std::cin >> trans) {
+			if (total.isbn() == trans.isbn()) {
+				total += trans;
+				++occurances;
 			}
-			//item does not equal prev item read prev items group & reset current;
 			else {
-				std::cout << currentItem << "\n\t" << std::endl;
-				currentItem = nextItem;
+				std::cout << "\n" << total << "\n"
+					<< "Trans count: " << ++occurances << "\n"
+					<< spacer;
+				allSales += total;
+				total = trans;
+				occurances = 0;
+				groupCnt++;
 			}
 		}
-		//this doesnt get called until there are no more items.(calls last item group)
-		std::cout << "CALLED LAST ITEM\n" << currentItem << std::endl;
+		allSales += total;
+		std::cout << total << "\n"
+			<< "Trans Count: " << ++occurances << "\n" << spacer
+			<< "\nTotal Summary: \n" << allSales
+			<< "\n" << "Book IBSN Groups Sold: " << groupCnt
+			<< std::endl;
 	}
-
-
-
 	return 0;
 }
