@@ -36,7 +36,7 @@ Use float when:
 - Precision of 6-7 digits is enough
 - API specifically requires float
 
-## example) To calculate a mortgage payment, what types would you use for the rate, principal and payment? Explain why you selected each type?
+## To calculate a mortgage payment, what types would you use for the rate, principal and payment? Explain why you selected each type?
 
 ### Rate
 *usage type:* `double` 
