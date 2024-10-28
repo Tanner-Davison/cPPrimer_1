@@ -35,3 +35,29 @@ Use float when:
 - Working with graphics/3D
 - Precision of 6-7 digits is enough
 - API specifically requires float
+
+## example) To calculate a mortgage payment, what types would you use for the rate, principal and payment? Explain why you selected each type?
+
+### Rate
+*usage type:* `double` 
+*why:* 
+- Rates need precise decimal calculations
+- Rates are typically small numbers (like 4.25%)
+- Don't need unsigned as rates can be negative in some financial calculations
+- Double is preferred over float for financial calculations
+
+### Principal
+*usage type:* `double` 
+*why:*
+- Large numbers but rarely beyond double's precision
+- Standard mortgage amounts (even in millions) fit well within double's range
+- Long double is rarely needed and can cause performance issues
+- Unsigned isn't needed as debt amounts could be negative in some calculations
+
+### Payment
+*usage type:* `double` 
+*why:*
+- Need precision for exact payment calculations
+- Payments involve multiplication/division of rate and principal
+- Keeping all related calculations in same type (double) reduces conversion errors
+- Double is the standard for financial calculations
