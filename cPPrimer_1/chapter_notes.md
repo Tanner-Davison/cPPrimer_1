@@ -14,12 +14,12 @@ Example:
 
 **Float vs Double:**
 
-*float:*
+float
 - 4 bytes (32 bits)
 - ~7 decimal digits precision
 - suffix: f (3.14f)
 
-*double:*
+double
 - 8 bytes (64 bits)
 - ~15-17 decimal digits precision
 - no suffix needed (3.14)
