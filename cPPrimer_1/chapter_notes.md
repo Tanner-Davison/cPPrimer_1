@@ -1,5 +1,4 @@
-## What are the differences between int, long, long long, and short?
-## Between an unsigned and a signed type? Between float and a double?
+## What are the differences between int, long, long long, and short? Between an unsigned and a signed type? Between float and a double?
 
 short = 2 bytes (16 bits) 
 int = 4 bytes (32 bits typically)
