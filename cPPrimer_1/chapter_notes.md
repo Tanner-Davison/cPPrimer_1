@@ -13,6 +13,7 @@ Example:
 8-bit unsigned: 0 to 255
 
 **Float vs Double:**
+
 *float:*
 - 4 bytes (32 bits)
 - ~7 decimal digits precision
