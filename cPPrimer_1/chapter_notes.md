@@ -61,3 +61,17 @@ Use float when:
 - Payments involve multiplication/division of rate and principal
 - Keeping all related calculations in same type (double) reduces conversion errors
 - Double is the standard for financial calculations
+
+## "When in doubt, double it out" because:
+1. It's C++'s default floating-point type
+2. Good balance of precision and performance
+3. Most modern hardware optimizes for double
+4. Enough precision (15-17 digits) for most uses
+5. Rarely need the extra precision of long double
+6. More precise than float without major performance cost
+
+Exception Rules (when not to double):
+1. Graphics programming (use float)
+2. Memory is super critical (use float)
+3. API specifically asks for float
+4. Embedded systems with limited resources
