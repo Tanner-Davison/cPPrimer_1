@@ -24,7 +24,7 @@ Units sold: 6
 Revenue: $150.00
 Avg price: $25.00
 Trans Count: 3
--------------------------
+-------------------------
 
 Total Summary: 
 ISBN: 

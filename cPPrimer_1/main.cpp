@@ -26,7 +26,7 @@ int main() {
 		}
 		allSales += total;
 		std::cout << total << "\n"
-			<< "Trans Count: " << ++occurances << "\n" << spacer
+			<< "Trans Count: " << ++occurances << "\n\a" << spacer
 			<< "\nTotal Summary: \n" << allSales
 			<< "\n" << "Book IBSN Groups Sold: " << groupCnt
 			<< std::endl;
