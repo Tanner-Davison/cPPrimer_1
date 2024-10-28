@@ -12,13 +12,13 @@ Example:
 8-bit signed: -128 to 127
 8-bit unsigned: 0 to 255
 
-Float vs Double:
-float:
+**Float vs Double:**
+*float:*
 - 4 bytes (32 bits)
 - ~7 decimal digits precision
 - suffix: f (3.14f)
 
-double:
+*double:*
 - 8 bytes (64 bits)
 - ~15-17 decimal digits precision
 - no suffix needed (3.14)
