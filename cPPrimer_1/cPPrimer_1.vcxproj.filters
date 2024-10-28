@@ -31,4 +31,7 @@
     <Text Include="add_item.txt" />
     <Text Include="outfile.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="chapter_notes.md" />
+  </ItemGroup>
 </Project>
